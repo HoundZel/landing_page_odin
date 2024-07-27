@@ -1,0 +1,139 @@
+.header {
+    position: sticky;
+    top: 0;
+    background: #1b212b;
+    /* border: 4px solid brown; */
+    height: 7vh;
+    display: flex;
+}
+
+.logopic{
+    padding: 0.5vh;
+    max-width: 20%;
+    max-height: auto;
+}
+.gap{
+    flex: 1;
+    padding-left: 30vw;
+}
+.nav {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: right;
+    padding-top: 0 2vw;
+    padding-right: 1vw;
+}
+.nav div {
+    border-left: 1px solid grey;
+    color: white;
+    margin: 2%;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-style: impact;
+    font-family: sans-serif;
+}
+.watch {
+    border-right: 1px solid grey;
+}
+
+.intro {
+    background: #0f141b;
+    /*border: 4px solid brown; */
+    height: 43vh;
+    align-items: center;
+    display: flex;
+}
+
+.intro div{
+    border: 4px solid blue;
+    height: 90%;
+    flex: 1;
+}
+
+.info {
+    border: 4px solid brown;
+    height: 50vh;
+    align-items: center;
+    display: flex;
+    flex: 1;
+}
+
+.quote {
+    background: #E5E7EB;
+    /*border: 4px solid brown;*/
+    align-items: center;
+    height: 50vh;
+    padding: 10vh;
+}
+
+.quote-text {
+    /* border: 4px solid blue; */
+    text-align: center;
+    width: 70%;
+    font-size: 36px;
+    font-weight: 300; /* light */
+    font-style: italic;
+    font-family: Georgia, serif;
+    color: #1F2937;
+
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.quote-pers {
+    /* border: 4px solid blue; */
+    text-align: right;
+    width: 70%;
+    font-size: 26px;
+    font-weight: bold;
+    font-style: italic, bold;
+    font-family: Georgia, serif;
+    color: #1F2937;
+
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.quote-img{
+    /* border: 4px solid blue; */
+    text-align: right;
+    width: 70%;
+    font-size: 26px;
+    font-weight: bold;
+    font-style: italic, bold;
+    font-family: Georgia, serif;
+    color: #1F2937;
+
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.handsome{
+    max-width: 15%;
+    max-height: auto;
+}
+
+.action {
+    /*border: 4px solid brown; */
+    height: 30vh;
+    align-items: center;
+    display: flex;
+    flex: 1;
+}
+
+.copyright {
+    /*border: 4px solid brown; */
+    padding:1vh;
+    background: #0f141b;
+    height: 5vh;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+
