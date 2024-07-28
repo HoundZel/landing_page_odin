@@ -1,3 +1,16 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("media/5prw.gif");
+    background-size: cover;
+    background-position: center;
+  }
+
+a {
+text-decoration: none;
+color: inherit;
+}
+
 .header {
     position: sticky;
     top: 0;
@@ -5,6 +18,7 @@
     /* border: 4px solid brown; */
     height: 7vh;
     display: flex;
+    z-index: 100; /* Increase the z-index to bring the header to the top */
 }
 
 .logopic{
@@ -41,33 +55,150 @@
 }
 
 .intro {
-    background: #0f141b;
     /*border: 4px solid brown; */
+    background: #0f141b;
     height: 43vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
     align-items: center;
     display: flex;
 }
 
-.intro div{
-    border: 4px solid blue;
+.description {
+    /* border: 4px solid blue; */
     height: 90%;
+    text-align: center;
+    padding-right: 3vw;
+    padding-left: 3vw;
     flex: 1;
+    overflow: hidden; /* Hide any content that exceeds the parent div size */
+    position: relative; /* Needed for the child div's positioning */
+
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.tokyo{
+    /* border: 4px solid blue; */
+    font-size: 48px;
+    font-weight: 800; /* "extra-bold" corresponds to a font-weight of 800 */
+    color: #F9FAF8;
+}
+
+.desc{
+    /* border: 4px solid blue; */
+    font-size: 18px;
+    color: #E5E7EB;
+
+    overflow: hidden;
+    text-overflow: ellipsis; /* Show ellipsis for overflowing text */
+    transform-origin: center center; /* Set the transform origin to the center */
+}
+
+.media {
+    /* border: 4px solid blue; */
+    width: 30%;
+    height: 40vh; /* or any desired height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AE86{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
 
 .info {
-    border: 4px solid brown;
-    height: 50vh;
+    /*border: 4px solid brown;*/
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-right: 10vw;
+    padding-left: 10vw;
+    height:85vh;
     align-items: center;
+}
+
+.gallery2{
+    font-size: 40px;
+    font-weight: 700; /* "extra-bold" corresponds to a font-weight of 800 */
+    color: #F9FAF8;
+    text-align: center;
+    text-decoration: underline white;
+}
+
+.fillers{
+    height:80%;
     display: flex;
+    overflow: auto;
+}
+
+.fillers div{
+    /*border: 4px solid brown;*/
+    padding:2vw;
     flex: 1;
+    width:100%;
+}
+
+.filler1{
+    border: 2px solid grey;
+    border-radius: 50px;
+    gap: 5px;
+}
+
+.filler1-img{
+    border: 4px solid black;
+    width: 50%;
+    height: 30vh;
+    overflow: hidden;
+    border-radius: 30px;
+    position: relative; /* Needed for the child element positioning */
+    padding: 0 !important;
+}
+
+.square{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the entire div while maintaining aspect ratio */
+    border-radius: inherit; /* Inherits the border-radius from the parent div */
+    position: absolute; /* Positions the child element to fill the parent div */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.filler1-text{
+    width: 100%;
+    font-size: 30px;
+    font-weight: 700; /* "extra-bold" corresponds to a font-weight of 800 */
+    color: #F9FAF8;
+    text-align: center;
+    padding: 0 !important;
+}
+
+.filler1-text1{
+    font-size: 20px;
+    font-weight: 500; /* "extra-bold" corresponds to a font-weight of 800 */
+    color: #F9FAF8;
+    text-align: center;
+    padding: 0 !important;
 }
 
 .quote {
     background: #E5E7EB;
     /*border: 4px solid brown;*/
     align-items: center;
-    height: 50vh;
-    padding: 10vh;
+    height: 40vh;
+    padding: 15vh;
+    overflow: auto;
+}
+
+.quote div {
+    flex-shrink: 0;
 }
 
 .quote-text {
@@ -122,9 +253,70 @@
 .action {
     /*border: 4px solid brown; */
     height: 30vh;
+    justify-content: center;
     align-items: center;
     display: flex;
-    flex: 1;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.driver1{
+    max-height: 80%;
+    max-width:20%;
+    border: 3px solid black;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 30px;
+    position: relative; /* Needed for the child element positioning */
+    flex-grow: 1;
+    flex-shrink: 1;
+
+}
+
+.driver2{
+    max-height: 80%;
+    max-width:20%;
+    border: 3px solid black;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 30px;
+    position: relative; /* Needed for the child element positioning */
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.action_text{
+    /*border: 4px solid brown; */
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.maindriftid{
+    position: absolute; /* Positions the child element to fill the parent div */
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.maindriftmfg{
+    position: absolute; /* Positions the child element to fill the parent div */
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 150%;
+    transform: translate(-50%, -50%);
+}
+
+.maindriftid:hover{
+    opacity:0;
+}
+
+.maindriftmfg:hover{
+    opacity:0;
 }
 
 .copyright {
